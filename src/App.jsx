@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/Navbar/Header'
+import Header from './components/Navbar/Header'  
+import Footer from './components/Footer/Footer'
+import HomePage from './components/HomePage/HomePage'
+import { Routes, Route, Outlet, Link } from 'react-router-dom'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     
     <div id='app-container'>
-      <Header />
+      
+      <Routes>
+        <Route path='/' element={<div> <Header /> <Outlet /> <Footer /> </div>}>
+          <Route index element={<div> <HomePage /> </div>}/>
+        </Route>
+      </Routes>
+      
     </div>
   )
 }
