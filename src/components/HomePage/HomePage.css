@@ -1,0 +1,277 @@
+#ad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    height: 50vh;
+    padding: 12vh;
+    line-height: 9vh;
+}
+
+#ad-header {
+    font-size: xx-large;
+}
+
+#ad-content {
+    font-size: large;
+}
+
+#sign-button {
+    margin-top: 3vh;
+    width: 15vw;
+    height: 7vh;
+    border-radius: 25px;
+    border: 2px rgb(15,19,35) solid;
+    background-color: rgb(15,19,35);
+    color: white;
+    font-size: large;
+    transition: .3s;
+}
+
+#sign-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: white;
+    color: rgb(15,19,35);
+}
+
+#cyber-ad {
+    height: 50vh;
+    background-color: rgb(15,19,35);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+}
+
+#cyber-ad-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+}
+
+.cyber-ads {
+    
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: larger;
+    line-height: 8vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#essentials-container {
+    perspective: 1000px;    
+}
+
+#essentials-container {
+    perspective: 1000px;
+}
+
+#essentials-container-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#essentials-container:hover #essentials-container-inner {
+    transform: rotateY(180deg);
+}
+
+#essentials-front, #essentials-back {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    backface-visibility: hidden;
+    left: -10%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#essentials-back {
+    transform: rotateY(180deg);
+    line-height: 5vh;
+    font-size: medium;
+    background-color: rgb(55, 60, 79);
+    padding: 5vh;
+    height: 80%;
+    width: 100%;
+}
+
+#essentials-front {
+    background-image: url('https://cyberpro-israel.co.il/wp-content/uploads/2020/05/program_f_bg.jpg');
+    background-size: 100% 100%;
+    padding: 5vh;
+    height: 80%;
+    width: 100%;
+}
+
+#blue-container {
+    perspective: 1000px;
+}
+
+#blue-container-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#blue-container:hover #blue-container-inner {
+    transform: rotateY(180deg);
+}
+
+#blue-front, #blue-back {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    backface-visibility: hidden;
+    left: -10%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#blue-back {
+    transform: rotateY(180deg);
+    line-height: 5vh;
+    font-size: medium;
+    background-color: rgb(55, 60, 79);
+    padding: 5vh;
+    height: 80%;
+    width: 100%;
+}
+
+#blue-front {
+    background-image: url('https://cyberpro-israel.co.il/wp-content/uploads/2019/12/Blue-Team-Cyber-Security-page-Banner-BLOCK-v0.1.jpg');
+    background-size: 140% 100%;
+    padding: 5vh;
+    height: 80%;
+    width: 100%;
+}
+
+#red-container {
+    perspective: 1000px;
+}
+
+#red-container-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#red-container:hover #red-container-inner {
+    transform: rotateY(180deg);
+}
+
+#red-front, #red-back {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    backface-visibility: hidden;
+    left: -10%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#red-back {
+    transform: rotateY(180deg);
+    line-height: 5vh;
+    font-size: medium;
+    background-color: rgb(55, 60, 79);
+    padding: 5vh;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#red-front {
+    background-image: url('https://cyberpro-israel.co.il/wp-content/uploads/2020/05/Red-1600.jpg');
+    background-size: 100% 100%;
+    padding: 5vh;
+    height: 80%;
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#cyber-ad-header {
+    text-align: center;
+    padding-top: 5vh;
+    font-size: xx-large;
+    height: 10vh;
+    background-color: rgb(15,19,35);
+    color: white;
+    padding-top: 10vh;
+}
+
+#fullstack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    line-height: 8vh;
+    padding: 15vh;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#fullstack-header {
+    font-size: xxx-large;
+}
+
+#fullstack-second-header {
+    font-size: xx-large;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#fullstack-content {
+    font-size: large;
+}
+
+#fullstack-flex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#fullstack-img-container {
+    margin-top: 15vh;
+    margin-right: 15vh;
+}
