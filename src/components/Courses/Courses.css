@@ -1,0 +1,113 @@
+.courses-container {
+    height: 100vh;
+    text-align: end;
+    z-index: -1;
+    background-image: url('https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#red-course {
+    background-color: rgba(170, 2, 2, 0.325);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.courses-header {
+    font-size: xxx-large;
+    line-height: 12vh;
+    padding-top: 25vh;
+}
+
+#cyber-red-header-container {
+    padding: 15vh;
+}
+
+.courses-time {
+    font-size: x-large;
+    color: rgb(199, 199, 199);
+    margin-top: 4vh;
+    margin-right: 0.3vw;
+}
+
+.imgs {
+    width: 80px;
+    transform: translateY(22px);
+}
+
+#red-course-content {
+    text-align: end;
+    padding: 15vh;
+}
+
+.content-headers {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+.content-content {
+    line-height: 5vh;
+    font-size: large;
+}
+
+.qulifications {
+    width: 100px;
+}
+
+#qualifications-flexer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+#qulifications-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#qulifications-container-inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+
+.schedule-button {
+    margin-top: 3vh;
+    width: 15vw;
+    height: 7vh;
+    border-radius: 25px;
+    border: 2px rgb(15, 19, 35) solid;
+    background-color: rgb(15, 19, 35);
+    color: white;
+    font-size: large;
+    transition: .3s;
+}
+
+.schedule-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: white;
+    color: rgb(15, 19, 35);
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    margin-top: 3vh;
+}
+
+.flexer {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+}

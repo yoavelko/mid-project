@@ -220,6 +220,11 @@
     width: 100%;
 }
 
+#cyber-imgs {
+    height: 80px;
+    opacity: 0.8;
+}
+
 a:link {
     text-decoration: none;
     color: white;
@@ -246,20 +251,26 @@ a:visited {
     align-items: flex-end;
     text-align: end;
     line-height: 8vh;
-    padding: 15vh;
+    margin-left: 10vh;
+    padding-left: 5vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    padding-right: 10vh;
     background-image: url('');
     background-repeat: no-repeat;
     background-size: 100%;
+    height: calc(60vh - 4px);
 }
 
 #fullstack-header {
     font-size: xxx-large;
+    margin-top: 3vh;
 }
 
 #fullstack-second-header {
     font-size: xx-large;
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
 }
 
 #fullstack-content {
@@ -273,5 +284,11 @@ a:visited {
 
 #fullstack-img-container {
     margin-top: 15vh;
-    margin-right: 15vh;
+    margin-right: 10vh;
+}
+
+#fullstack-img {
+    height: 60vh;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
