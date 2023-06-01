@@ -3,8 +3,10 @@ import './App.css'
 import Header from './components/Navbar/Header'  
 import Footer from './components/Footer/Footer'
 import HomePage from './components/HomePage/HomePage'
-import About from './components/About/About'
+import { Routes, Route, Outlet, Link } from 'react-router-dom'
+import About from './components/about/About'
 import Courses from './components/Courses/RedTeam/RedTeam'
+
 
 
 function App() {
