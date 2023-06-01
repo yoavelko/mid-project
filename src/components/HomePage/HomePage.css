@@ -235,6 +235,10 @@ a:visited {
     color: white;
 }
 
+a:visited:hover {
+    color: rgb(15,19,35)
+}
+
 #cyber-ad-header {
     text-align: center;
     padding-top: 5vh;

@@ -1,4 +1,5 @@
 import './HomePage.css'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
 
@@ -17,7 +18,11 @@ function HomePage() {
                 <div id='ad-content'>
                     .ההכשרה היחדה שתבטיח לך קריירה מומצלחת בתעשיית ההייטק העתידית
                 </div>
-                <button className='buttons' id='sign-button'>הירשמו עכשיו</button>
+                <button className='buttons' id='sign-button'>
+                    <Link to={'/Login'}>
+                        הירשמו עכשיו
+                    </Link>
+                </button>
             </div>
 
             <div id='cyber-ad-header'>המומלצים ביותר</div>
@@ -34,9 +39,9 @@ function HomePage() {
                                 <span><span>Red Team</span> קורס הכשרת מגן סייבר</span>
                                 <span>מכין את בוגריו לפעול באופן פרואקטיבי על מנת לגלות פרצות אבטחה, לחסן את הארגון מפני התקפות מבחוץ ומבפנים ולסגור כל נקודת חולשה אפשרית</span>
                                 <br />
-                                <a href="">
+                                <Link to={'/RedTeam'} onClick={() => window.scrollTo(0, 0)}>
                                     <span id='read-more'>קרא עוד</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -53,9 +58,9 @@ function HomePage() {
                                     <br />
                                     <span>מכין את בוגריו  להתמודד בהצלחה עם האיומים העדכניים ביותר שיש למערכות המידע הארגוניות כיום. הידע הנלמד בקורס מגן סייבר יסייע לך לנטר ולנתח תקשורת נתונים חשודה, לחקור נזקי פוגענים ועוד</span>
                                     <br />
-                                    <a href="">
+                                    <Link to={'/BlueTeam'} onClick={() => window.scrollTo(0, 0)}>
                                         <span id='read-more'>קרא עוד</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -72,9 +77,9 @@ function HomePage() {
                             <div id='essentials-back'>
                                 <div>המסלול הזה הינו קרוס טכנולוגי ומעשי לעולמות הידע שהן הליבה של טכנולוגיות המידע – והצעד הראשון לקריירה בסייבר</div>
                                 <br />
-                                <a href="">
+                                <Link to={'/Essentials'} onClick={() => window.scrollTo(0, 0)}>
                                     <span id='read-more'>קרא עוד</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -87,7 +92,7 @@ function HomePage() {
                 <div id='fullstack-container'>
                     <div id='fullstack-header'>!חדש בסייברפו ישראל</div>
                     <div id='fullstack-second-header'>Full-stack קורס</div>
-                    <div id='fullstack-content'>למה לעבוד קשה כשאפשר לעבוד נכון? עולם התכנות של ימינו עשוי להיות מבלבל עם מגוון רחב של שפות תכנות שניתן להתמחות בהן. לכן כדי להתמחות בפיתוח צריך לדעת מה נכון ללמוד אבל גם לא פחות חשוב: לדעת על מה אפשר לוותר בשלב הנוכחי. מדובר בהחלטה דרמטית שתשפיע בסופו של דבר על הביקוש שלכם בשוק העבודה.</div>
+                    <div id='fullstack-content'>למה לעבוד קשה כשאפשר לעבוד נכון? עולם התכנות של ימינו עשוי להיות מבלבל עם מגוון רחב של שפות תכנות שניתן להתמחות בהן. לכן כדי להתמחות בפיתוח צריך לדעת מה נכון ללמוד אבל גם לא פחות חשוב: לדעת על מה אפשר לוותר בשלב הנוכחי. מדובר בהחלטה דרמטית שתשפיע בסופו של דבר על הביקוש שלכם בשוק העבודה</div>
                 </div>
             </div>
 

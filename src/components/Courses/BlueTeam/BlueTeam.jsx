@@ -1,10 +1,24 @@
 import '../Courses.css'
+import { cartContext } from '../../../Contexts/cartContext';
+import { cartStyle } from '../../../Contexts/cartStyle';
+import { useContext , useState } from 'react';
 
 
 function BlueTeam() {
 
+    const { cart, setCart } = useContext(cartContext);
+    const { setStyle } = useContext(cartStyle);
+    const [text , setText] = useState('הוסף לסל');
+
     function salHandler() {
-        console.log('red course')
+        if (text === 'הוסף לסל') {
+            setStyle('notification');
+            setText('הסר מהסל');
+            setCart([...cart, 'RedTeam']);
+        } else {
+            setStyle('');
+            setText('הוסף לסל');
+        }
     }
 
     return (
@@ -99,7 +113,7 @@ function BlueTeam() {
                         <a href="https://cyberpro-israel.co.il/wp-content/uploads/2021/01/Syllabus-BT-CPI-HEB-V2.0-WEB.pdf" target="_blank" rel="noopener noreferrer">
                             <button className='schedule-button'>סילבוס הקורס</button>
                         </a>
-                        <button className='schedule-button' onClick={salHandler}>הוסף לסל</button>
+                        <button className='schedule-button' onClick={salHandler}>{text}</button>
                     </div>
                 </div>
 

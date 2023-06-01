@@ -1,10 +1,24 @@
 import '../Courses.css'
+import { cartContext } from '../../../Contexts/cartContext';
+import { cartStyle } from '../../../Contexts/cartStyle';
+import { useContext , useState } from 'react';
 
 
 function RedTeam() {
 
+    const { cart, setCart } = useContext(cartContext);
+    const { setStyle } = useContext(cartStyle);
+    const [text , setText] = useState('הוסף לסל');
+
     function salHandler() {
-        console.log('red course')
+        if (text === 'הוסף לסל') {
+            setStyle('notification');
+            setText('הסר מהסל');
+            setCart([...cart, 'RedTeam']);
+        } else {
+            setStyle('');
+            setText('הוסף לסל');
+        }
     }
 
     return (
@@ -23,8 +37,8 @@ function RedTeam() {
             <div id='red-course-content'>
                 <div className='content-headers'><span></span>Red Team Expert -<span> תיאור ומטרת קורס</span></div>
                 <div className='content-content'>
-                    קורס הכשרת מגן סייבר 
-                    'רד טים אקספרט' 
+                    קורס הכשרת מגן סייבר
+                    'רד טים אקספרט'
                     מכין את בוגריו לפעול באופן פרואקטיבי על מנת לגלות פרצות אבטחה, לחסן את הארגון מפני התקפות מבחוץ ומבפנים ולסגור כל נקודת חולשה אפשרית</div>
                 <br />
                 <div className='content-content'>בהכשרה הייחודית של CYBERPRO הושם דגש על בניית סט יכולות טכניות גבוהות שיאפשרו להתמודד עם התוקף המתוחכם ביותר. את הידע הרב שתצברו נבחן באמצעות טכנולוגיות למידה מהמתקדמות בעולם, שיאמנו ויכינו אתכם לעבודה במקצוע ובסטנדרטים הגבוהים ביותר</div>
@@ -100,7 +114,7 @@ function RedTeam() {
                         <a href="https://cyberpro-israel.co.il/wp-content/uploads/2021/01/Syllabus-RT-CPI-HEB-v2.0-WEB.pdf" target="_blank" rel="noopener noreferrer">
                             <button className='schedule-button'>סילבוס הקורס</button>
                         </a>
-                        <button className='schedule-button' onClick={salHandler}>הוסף לסל</button>
+                        <button className='schedule-button' onClick={salHandler}>{text}</button>
                     </div>
                 </div>
 
