@@ -26,6 +26,7 @@ function HomePage() {
                     <div className='cyber-ads' id='red-container'>
                         <div id='red-container-inner'>
                             <div id='red-front'>
+                                <img id='cyber-imgs' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/12/program_r_slider_icon_course_v0.1.svg" alt="" />
                                 <div id='red-header'>Red Team Expert</div>
                                 <div id='red-content'>הכשרת אנשי צוות אדום לבדיקות חדירה בתשתיות ובמערכות מידע</div>
                             </div>
@@ -42,6 +43,7 @@ function HomePage() {
                     <div className='cyber-ads' id='blue-container'>
                         <div id='blue-container-inner'>
                             <div id='blue-front'>
+                                <img id='cyber-imgs' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/08/program_b_slider_icon_course.svg" alt="" />
                                 <div>Blue Team Defender</div>
                                 <div>הכשרת אנשי צוות כחול להתמודדות עם אירועי סייבר ותחקורים</div>
                             </div>
@@ -62,8 +64,10 @@ function HomePage() {
                     <div className='cyber-ads' id='essentials-container'>
                         <div id='essentials-container-inner'>
                             <div id='essentials-front'>
+                                <img id='cyber-imgs' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/12/program_e_slider_icon_course_v0.1.svg" alt="" />
                                 <div>Cyber Essentials</div>
                                 <div>הכשרה לטכנולוגיות הליבה של עולם הסייבר</div>
+                                <br />
                             </div>
                             <div id='essentials-back'>
                                 <div>המסלול הזה הינו קרוס טכנולוגי ומעשי לעולמות הידע שהן הליבה של טכנולוגיות המידע – והצעד הראשון לקריירה בסייבר</div>

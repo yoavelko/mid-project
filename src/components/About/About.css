@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0;
 }
+
 .logo-holder{
     display: flex;
     justify-content: flex-end;
     background-color: rgb(15,19,35)
 }
+
 .headline{
     display: flex;
     background-color: rgb(15,19,35);
