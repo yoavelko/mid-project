@@ -1,4 +1,3 @@
-import { Routes, Route, Outlet } from 'react-router-dom'
 import './App.css'
 import Header from './components/Navbar/Header'  
 import Footer from './components/Footer/Footer'
