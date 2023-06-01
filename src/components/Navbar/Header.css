@@ -24,6 +24,8 @@
   background-color: rgb(15, 19, 35);
   width: 100%;
   font-size: x-large;
+  position: fixed;
+  z-index: 999;
 }
 
 .nav-item {
@@ -83,4 +85,9 @@
 
 #header-logo {
   width: 100%;
+  transition: 0.3s;
+}
+
+#logo-container:hover #header-logo {
+  transform: scale(1.1);
 }
