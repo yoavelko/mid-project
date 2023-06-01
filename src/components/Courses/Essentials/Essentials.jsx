@@ -1,7 +1,7 @@
 import '../Courses.css'
 
 
-function RedTeam() {
+function Essentials() {
 
     function salHandler() {
         console.log('red course')
@@ -9,27 +9,26 @@ function RedTeam() {
 
     return (
         <div id='general-container'>
-            <div className='red-course-container'>
-                <div id='red-course'>
+            <div className='essentials-course-container'>
+                <div id='essentials-course'>
                     <div id='cyber-red-header-container'>
                         <div className='courses-header'>
                             קורס הכשרת <br />
-                            <img className='imgs' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/12/program_r_slider_icon_course_v0.1.svg" alt="" />ED TEAM EXPERT
+                            <img style={{marginRight: '5px'}} className='imgs' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/12/program_e_slider_icon_course_v0.1.svg" alt="" />SSENTIALS CYBER
                         </div>
                         <div className='courses-time'>משך הקורס: 248 שעות</div>
                     </div>
                 </div>
             </div>
             <div id='red-course-content'>
-                <div className='content-headers'><span></span>Red Team Expert -<span> תיאור ומטרת קורס</span></div>
-                <div className='content-content'>
-                    קורס הכשרת מגן סייבר 
-                    'רד טים אקספרט' 
-                    מכין את בוגריו לפעול באופן פרואקטיבי על מנת לגלות פרצות אבטחה, לחסן את הארגון מפני התקפות מבחוץ ומבפנים ולסגור כל נקודת חולשה אפשרית</div>
+                <div className='content-headers'><span></span>Cyber Essentials -<span> תיאור ומטרת קורס</span></div>
+                <div className='content-content'>קורס הכשרת מגן סייבר 
+                'בלו טים דפנדר' 
+                מכין את בוגריו להתמודד בהצלחה עם האיומים העדכניים ביותר שיש למערכות המידע הארגוניות כיום. הידע הנלמד בקורס מגן סייבר יסייע לך לנטר ולנתח תקשורת נתונים חשודה, לחקור נזקי פוגענים ועוד</div>
                 <br />
-                <div className='content-content'>בהכשרה הייחודית של CYBERPRO הושם דגש על בניית סט יכולות טכניות גבוהות שיאפשרו להתמודד עם התוקף המתוחכם ביותר. את הידע הרב שתצברו נבחן באמצעות טכנולוגיות למידה מהמתקדמות בעולם, שיאמנו ויכינו אתכם לעבודה במקצוע ובסטנדרטים הגבוהים ביותר</div>
+                <div className='content-content'>בהכשרה הייחודית של סייברפרו הושם דגש על עבודה מעשית רבה שתבוצע במעבדות תרגול ובאמצעות טכנולוגיות למידה מהמתקדמות בעולם</div>
                 <br />
-                <div className='content-content'>בסיום הקורס תוכלו לתכנן, לבצע ולזהות פרצות אפשריות במערכות מידע ובמערכיי תקשורת, לזהות נקודות חולשה בארגון ולבנות אסטרטגיות הגנה שיחסנו את הארגון. הקורס יכשיר אתכם לתעשיית הסייבר לתפקידי מפתח בעולם הסייבר, כגון: בודקי חדירות, חברי צוותים אדומים וחוקרי פגיעויות</div>
+                <div className='content-content'>בסיום הקורס תוכלו להגן ולאבטח מערכות מידע, לצוד אירועי חדירה ולזהות התקפות שמתרגשות לבוא. הקורס יכשיר אתכם לתעשיית הסייבר לתפקידים כגון: Incident Responder, מפעיל SOC, אנליסט סייבר וחוקר סייבר</div>
                 <br /><br /><br />
                 <div className='content-headers'>קהל היעד</div>
                 <div className='content-content'>
@@ -91,13 +90,16 @@ function RedTeam() {
                         <div className='content-headers'>:הסמכות</div>
                         <div id='qulifications-container'>
                             <div id='qulifications-container-inner'>
-                                <img className='qulifications' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/11/Red-web.svg" alt="" />
-                                <img className='qulifications' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/11/OSCP-Certification-Logo.png" alt="" />
+                                <img className='qulifications' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/11/Essentials-web.svg" alt="" />
+                                <img className='qulifications' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/08/CISCO-Cyber-OPS-Certification-1-200x200.png" alt="" />
+                                <img className='qulifications' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/08/CCSA-Checkpoint-Certification-200x200.png" alt="" />
+                                <img className='qulifications' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/08/CompTIA-Certification-200x200.png" alt="" />
+                                <img className='qulifications' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/08/mta-Certification-200x200.png" alt="" />
                             </div>
                         </div>
                     </div>
                     <div id='button-container'>
-                        <a href="https://cyberpro-israel.co.il/wp-content/uploads/2021/01/Syllabus-RT-CPI-HEB-v2.0-WEB.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="https://cyberpro-israel.co.il/wp-content/uploads/2021/01/Syllabus-BT-CPI-HEB-V2.0-WEB.pdf" target="_blank" rel="noopener noreferrer">
                             <button className='schedule-button'>סילבוס הקורס</button>
                         </a>
                         <button className='schedule-button' onClick={salHandler}>הוסף לסל</button>
@@ -109,4 +111,4 @@ function RedTeam() {
     )
 }
 
-export default RedTeam
+export default Essentials

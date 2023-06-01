@@ -24,24 +24,24 @@ const Header = () => {
         <div id="dropdown" className='nav-item'>
           הקורסים שלנו
           <div id="dropdown-content">
-            <Link to="/course1">
+            <Link to="/RedTeam">
               <div className='dropdown-content'>
                 Red Team Expert
               </div>
             </Link>
-            <Link to="/course2">
+            <Link to="/BlueTeam">
               <div className='dropdown-content'>
                 Blue Team Defender
               </div>
             </Link>
-            <Link to="/course3">
+            <Link to="/Essentials">
               <div className='dropdown-content'>
                 Cyber Essentials
               </div>
             </Link>
-            <Link to="/course4">
+            <Link to="/FullStack">
               <div className='dropdown-content'>
-                Full-Stack
+                Full-Stack Development
               </div>
             </Link>
           </div>

@@ -1,4 +1,4 @@
-.courses-container {
+.red-course-container {
     height: 100vh;
     text-align: end;
     z-index: -1;
@@ -110,4 +110,69 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 10vh;
+}
+
+.blue-course-container {
+    height: 100vh;
+    text-align: end;
+    z-index: -1;
+    background-image: url('https://images.pexels.com/photos/6190327/pexels-photo-6190327.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#blue-course {
+    background-color: rgba(0, 0, 212, 0.358);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.essentials-course-container {
+    height: 100vh;
+    text-align: end;
+    z-index: -1;
+    background-image: url('https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#essentials-course {
+    background-color: rgba(79, 79, 79, 0.351);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#fullstack-logo-container {
+    background-color: white;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    transform: translate(-75px, 5px);
+}
+
+#fullstack-logo {
+    transform: translate(-7px, -6px);
+}
+
+#breaker {
+    margin-bottom: 3vh;
+}
+
+.fullstack-course-container {
+    height: 100vh;
+    text-align: end;
+    z-index: -1;
+    background-image: url('https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#fullstack-course {
+    background-color: rgba(118, 118, 1, 0.348);
+    width: 100%;
+    height: 100%;
+    color: white;
 }
