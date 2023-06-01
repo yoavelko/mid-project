@@ -1,28 +1,56 @@
 import React from 'react'
 import './Header.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <div className='header'>
       <div className="navbar">
-        <div className="nav-item">
-          <Link to="/">Home</Link>
+        <div id='logo-container'>
+          <Link to={'/'}>
+            <img id='header-logo' src="https://cyberpro-israel.co.il/wp-content/uploads/2021/01/CYBERPRO-Israel-Logo-Black.svg" alt="" />
+          </Link>
         </div>
-        <div className="nav-item">
-          <Link to="/about">About</Link>
-        </div>
-        <div className="dropdown">
-          Courses
-          <div className="dropdown-content">
-            <Link to="/course1">Course 1</Link>
-            <Link to="/course2">Course 2</Link>
-            <Link to="/course3">Course 3</Link>
+        <Link to="/">
+          <div className="nav-item">
+            דף הבית
+          </div>
+        </Link>
+        <Link to="/about">
+          <div className="nav-item">
+            אודות
+          </div>
+        </Link>
+        <div id="dropdown" className='nav-item'>
+          הקורסים שלנו
+          <div id="dropdown-content">
+            <Link to="/course1">
+              <div className='dropdown-content'>
+                Red Team Expert
+              </div>
+            </Link>
+            <Link to="/course2">
+              <div className='dropdown-content'>
+                Blue Team Defender
+              </div>
+            </Link>
+            <Link to="/course3">
+              <div className='dropdown-content'>
+                Cyber Essentials
+              </div>
+            </Link>
+            <Link to="/course4">
+              <div className='dropdown-content'>
+                Full-Stack
+              </div>
+            </Link>
           </div>
         </div>
-        <div className="nav-item">
-          <Link to="/personal-area">Personal Area</Link>
-        </div>
+        <Link to="/personal-area">
+          <div className="nav-item">
+            איזור אישי
+          </div>
+        </Link>
       </div>
 
 
