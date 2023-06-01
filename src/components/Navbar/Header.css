@@ -91,3 +91,13 @@
 #logo-container:hover #header-logo {
   transform: scale(1.1);
 }
+
+#notification {
+  animation: notification 1s;
+}
+
+@keyframes notification {
+  0% {color: rgb(179,179,179); transform: scale(1);}
+  50% {color: red; transform: scale(1.1);}
+  100% {color: rgb(179,179,179); transform: scale(1);}
+}
