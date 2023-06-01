@@ -10,9 +10,9 @@ const Header = () => {
           <Link to="/">Home</Link>
         </div>
         <div className="nav-item">
-          <Link to="/about">About</Link>
+          <Link to="/About">About</Link>
         </div>
-        <div className="dropdown">
+        <div className="nav-item dropdown">
           Courses
           <div className="dropdown-content">
             <Link to="/course1">Course 1</Link>
@@ -21,7 +21,7 @@ const Header = () => {
           </div>
         </div>
         <div className="nav-item">
-          <Link to="/personal-area">Personal Area</Link>
+          <Link to="/Login">Personal Area</Link>
         </div>
       </div>
 

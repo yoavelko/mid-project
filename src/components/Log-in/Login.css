@@ -1,0 +1,12 @@
+.personal-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 60vh;
+    line-height: 8vh;
+    margin-top: 10vh;
+}
+.input{
+    height: 4vh;
+    width: 12vw;
+}

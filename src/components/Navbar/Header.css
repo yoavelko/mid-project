@@ -18,9 +18,12 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  align-items: end;
+  justify-content: space-evenly;
   background-color: rgb(15, 19, 35);
   padding: 10px;
+  width: 100%;
+  font: larger;
 }
 
 .nav-item {
