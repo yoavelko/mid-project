@@ -50,7 +50,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <Link to="/personal-area">
+        <Link to="/Login">
           <div className="nav-item" id={style}>
             איזור אישי
           </div>

@@ -6,6 +6,7 @@ import { Routes, Route, Outlet, Link } from 'react-router-dom'
 import { cartContext } from './Contexts/cartContext'
 import { cartStyle } from './Contexts/cartStyle'
 import About from './components/about/About'
+import Login from './components/Log-in/Login'
 import RedTeam from './components/Courses/RedTeam/RedTeam'
 import BlueTeam from './components/Courses/BlueTeam/BlueTeam'
 import Essentials from './components/Courses/Essentials/Essentials'
@@ -22,7 +23,6 @@ function App() {
   return (
 
     <div id='app-container'>
-
       <cartContext.Provider value={{ cart, setCart }}>
         <cartStyle.Provider value={{ style, setStyle}}>
           <Routes>
@@ -33,11 +33,11 @@ function App() {
               <Route path='BlueTeam' element={<div> <BlueTeam /> </div>} />
               <Route path='Essentials' element={<div> <Essentials /> </div>} />
               <Route path='FullStack' element={<div> <FullStack /> </div>} />
+              <Route path='Login' element={<div> <Login /> </div>} />
             </Route>
           </Routes>
         </cartStyle.Provider>
       </cartContext.Provider>
-
     </div>
   )
 }
