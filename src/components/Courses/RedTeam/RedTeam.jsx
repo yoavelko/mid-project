@@ -16,7 +16,7 @@ function RedTeam() {
             setText('הסר מהסל');
             setCart([...cart, 'RedTeam']);
         } else {
-            setStyle('');
+            setStyle('personal-area');
             setText('הוסף לסל');
         }
     }

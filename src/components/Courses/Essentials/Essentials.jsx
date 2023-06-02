@@ -14,9 +14,9 @@ function Essentials() {
         if (text === 'הוסף לסל') {
             setStyle('notification');
             setText('הסר מהסל');
-            setCart([...cart, 'RedTeam']);
+            setCart([...cart, 'Essentials']);
         } else {
-            setStyle('');
+            setStyle('personal-area');
             setText('הוסף לסל');
         }
     }

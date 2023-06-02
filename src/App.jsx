@@ -11,6 +11,7 @@ import RedTeam from './components/Courses/RedTeam/RedTeam'
 import BlueTeam from './components/Courses/BlueTeam/BlueTeam'
 import Essentials from './components/Courses/Essentials/Essentials'
 import FullStack from './components/Courses/FullStack/FullStack'
+import Cart from './components/Cart/Cart'
 import { useState } from 'react'
 
 
@@ -18,7 +19,7 @@ import { useState } from 'react'
 function App() {
 
   const [cart, setCart] = useState([])
-  const [style, setStyle] = useState('')
+  const [style, setStyle] = useState('personal-area')
 
   return (
 
@@ -26,14 +27,15 @@ function App() {
       <cartContext.Provider value={{ cart, setCart }}>
         <cartStyle.Provider value={{ style, setStyle}}>
           <Routes>
-            <Route path='/' element={<div> <Header /> <Outlet /> <Footer /> </div>}>
-              <Route index element={<div> <HomePage /> </div>} />
-              <Route path='About' element={<div> <About /> </div>} />
-              <Route path='RedTeam' element={<div> <RedTeam /> </div>} />
-              <Route path='BlueTeam' element={<div> <BlueTeam /> </div>} />
-              <Route path='Essentials' element={<div> <Essentials /> </div>} />
-              <Route path='FullStack' element={<div> <FullStack /> </div>} />
-              <Route path='Login' element={<div> <Login /> </div>} />
+            <Route path='/' element={<div> <Outlet /> </div>}>
+              <Route index element={<div> <Header /> <HomePage /> <Footer /> </div>} />
+              <Route path='About' element={<div> <Header /> <About /> <Footer /> </div>} />
+              <Route path='RedTeam' element={<div> <Header /> <RedTeam /> <Footer /> </div>} />
+              <Route path='BlueTeam' element={<div> <Header /> <BlueTeam /> <Footer /> </div>} />
+              <Route path='Essentials' element={<div> <Header /> <Essentials /> <Footer /> </div>} />
+              <Route path='FullStack' element={<div> <Header /> <FullStack /> <Footer /> </div>} />
+              <Route path='Login' element={<div> <Header /> <Login /> <Footer /> </div>} />
+              <Route path='Cart' element={<div> <Header /> <Cart /> <Footer /> </div>} />
             </Route>
           </Routes>
         </cartStyle.Provider>
