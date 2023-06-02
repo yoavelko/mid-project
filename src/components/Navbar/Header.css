@@ -48,14 +48,15 @@
 #dropdown-content {
   display: none;
   position: absolute;
+  text-align: center;
   top: 90%;
-  left: -25%;
+  left: -50%;
   background-color: rgb(15, 19, 35);
   transition: transform 0.3s ease;
   transform: translateY(-10px);
   opacity: 0;
   height: 28vh;
-  width: 150%;
+  width: 200%;
   font-size: large;
   line-height: 7vh;
   padding: 10%;
@@ -94,10 +95,47 @@
 
 #notification {
   animation: notification 1s;
+  position: relative;
 }
 
 @keyframes notification {
   0% {color: rgb(179,179,179); transform: scale(1);}
   50% {color: red; transform: scale(1.1);}
   100% {color: rgb(179,179,179); transform: scale(1);}
+}
+
+#personal-area {
+  position: relative;
+}
+
+#personal-dropdown {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  left: -50%;
+  background-color: rgb(15, 19, 35);
+  transition: transform 0.3s ease;
+  transform: translateY(-10px);
+  opacity: 0;
+  height: 14vh;
+  width: 200%;
+  font-size: x-large;
+  line-height: 7vh;
+  padding: 10%;
+  color: rgb(179,179,179);
+}
+
+.personal-dropdown {
+  color: rgb(179,179,179);
+}
+
+#personal-area:hover #personal-dropdown , #notification:hover #personal-dropdown , #personal-dropdown:hover{
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.personal-dropdown:hover {
+  color: white;
 }
