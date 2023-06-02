@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const cartStyle = createContext('');
+export const cartStyle = createContext('personal-area');

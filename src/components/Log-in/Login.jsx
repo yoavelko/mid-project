@@ -11,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Find user with matching username and password
+
     const user = usersData.users.find(
       (u) => u.username === username && u.password === password
     );
@@ -25,7 +25,6 @@ const Login = () => {
       navigate('/AdminArea');
       setError('');
     } else {
-      // User not found or invalid credentials
       setError('Invalid username or password');
     }
   };

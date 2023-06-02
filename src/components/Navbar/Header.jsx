@@ -53,6 +53,18 @@ const Header = () => {
         <Link to="/Login">
           <div className="nav-item" id={style}>
             איזור אישי
+            <div id="personal-dropdown">
+              <Link to="/LogIn" onClick={() => window.scrollTo(0, 0)}>
+                <div className='personal-dropdown'>
+                  התחברות
+                </div>
+              </Link>
+              <Link to="/Cart" onClick={() => window.scrollTo(0, 0)}>
+                <div className='personal-dropdown'>
+                  הסל שלי
+                </div>
+              </Link>
+            </div>
           </div>
         </Link>
       </div>

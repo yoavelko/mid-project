@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 
 const SignUp = () => {
-  // State variables for form inputs
+
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validation checks
     if (password.length < 8) {
       alert('Password should be at least 8 characters long');
       return;
@@ -25,13 +23,11 @@ const SignUp = () => {
       return;
     }
 
-    // Saving form data to local storage
     localStorage.setItem('firstName', firstName);
     localStorage.setItem('lastName', lastName);
     localStorage.setItem('password', password);
     localStorage.setItem('username', username);
 
-    // Resetting form inputs
     setFirstName('');
     setLastName('');
     setPassword('');

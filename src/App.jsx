@@ -14,6 +14,7 @@ import FullStack from './components/Courses/FullStack/FullStack'
 import UserArea from './components/Personal-Area/Personal-Area-Holders/UserArea'
 import AdminArea from './components/Personal-Area/Personal-Area-Holders/AdminArea'
 import SideNavbar from './components/Personal-Area/Personal-Area-Navbar/SideNavbar'
+import Cart from './components/Cart/Cart'
 import { useState } from 'react'
 
 
@@ -22,7 +23,7 @@ import { useState } from 'react'
 function App() {
 
   const [cart, setCart] = useState([])
-  const [style, setStyle] = useState('')
+  const [style, setStyle] = useState('personal-area')
 
   return (
 
@@ -40,6 +41,7 @@ function App() {
               <Route path='Login' element={<div> <Header /> <Login /> <Footer /> </div>} />
               <Route path='UserArea' element={<div> <SideNavbar /> <UserArea /> </div>} />
               <Route path='AdminArea' element={<div> <SideNavbar /> <AdminArea /> </div>} />
+              <Route path='Cart' element={<div> <Header /> <Cart /> <Footer /> </div>} />
             </Route>
           </Routes>
         </cartStyle.Provider>
