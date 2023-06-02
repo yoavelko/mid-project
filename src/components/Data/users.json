@@ -1,125 +1,278 @@
 {
-    "users": [
-      {
-        "username": "johnDoe123",
-        "password": "P@ssw0rd1",
-        "firstName": "John",
-        "lastName": "Doe"
-      },
-      {
-        "username": "janeSmith456",
-        "password": "Secure2!",
-        "firstName": "Jane",
-        "lastName": "Smith"
-      },
-      {
-        "username": "davidJohnson789",
-        "password": "Secret3!",
-        "firstName": "David",
-        "lastName": "Johnson"
-      },
-      {
-        "username": "emilyWilliams101112",
-        "password": "Private4!",
-        "firstName": "Emily",
-        "lastName": "Williams"
-      },
-      {
-        "username": "michaelBrown131415",
-        "password": "Confidential5!",
-        "firstName": "Michael",
-        "lastName": "Brown"
-      },
-      {
-        "username": "emmaJones161718",
-        "password": "Protected6!",
-        "firstName": "Emma",
-        "lastName": "Jones"
-      },
-      {
-        "username": "danielTaylor192021",
-        "password": "Secure7!",
-        "firstName": "Daniel",
-        "lastName": "Taylor"
-      },
-      {
-        "username": "oliviaAnderson222324",
-        "password": "Secret8!",
-        "firstName": "Olivia",
-        "lastName": "Anderson"
-      },
-      {
-        "username": "matthewThomas252627",
-        "password": "Private9!",
-        "firstName": "Matthew",
-        "lastName": "Thomas"
-      },
-      {
-        "username": "sophiaJackson282930",
-        "password": "Confidential10!",
-        "firstName": "Sophia",
-        "lastName": "Jackson"
-      },
-      {
-        "username": "andrewWhite313233",
-        "password": "Protected11!",
-        "firstName": "Andrew",
-        "lastName": "White"
-      },
-      {
-        "username": "avaHarris343536",
-        "password": "Secure12!",
-        "firstName": "Ava",
-        "lastName": "Harris"
-      },
-      {
-        "username": "jamesMartin373839",
-        "password": "Secret13!",
-        "firstName": "James",
-        "lastName": "Martin"
-      },
-      {
-        "username": "isabellaThompson404142",
-        "password": "Private14!",
-        "firstName": "Isabella",
-        "lastName": "Thompson"
-      },
-      {
-        "username": "josephGarcia434445",
-        "password": "Confidential15!",
-        "firstName": "Joseph",
-        "lastName": "Garcia"
-      },
-      {
-        "username": "miaLopez464748",
-        "password": "Protected16!",
-        "firstName": "Mia",
-        "lastName": "Lopez"
-      },
-      {
-        "username": "benjaminClark495051",
-        "password": "Secure17!",
-        "firstName": "Benjamin",
-        "lastName": "Clark"
-      },
-      {
-        "username": "charlotteRodriguez525354",
-        "password": "Secret18!",
-        "firstName": "Charlotte",
-        "lastName": "Rodriguez"
-      },
-      {
-        "username": "williamLee555657",
-        "password": "Private19!",
-        "firstName": "William",
-        "lastName": "Lee"
-      },
-      {
-        "username": "admin",
-        "password": "admin",
-        "firstName": "Admin",
-        "lastName": "User"
+  "users": [
+    {
+      "username": "user",
+      "password": "user",
+      "firstName": "John",
+      "lastName": "Doe",
+      "grades": {
+        "start-test": 85,
+        "middle-test": 92,
+        "final-test": 78,
+        "start-project": 95,
+        "middle-project": 88,
+        "final-project": 91
       }
-    ]
+    },
+    {
+      "username": "janeSmith456",
+      "password": "Secure2!",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "grades": {
+        "start-test": 75,
+        "middle-test": 80,
+        "final-test": 88,
+        "start-project": 92,
+        "middle-project": 81,
+        "final-project": 76
+      }
+    },
+    {
+      "username": "davidJohnson789",
+      "password": "Secret3!",
+      "firstName": "David",
+      "lastName": "Johnson",
+      "grades": {
+        "start-test": 93,
+        "middle-test": 85,
+        "final-test": 76,
+        "start-project": 87,
+        "middle-project": 92,
+        "final-project": 78
+      }
+    },
+    {
+      "username": "emilyWilliams101112",
+      "password": "Private4!",
+      "firstName": "Emily",
+      "lastName": "Williams",
+      "grades": {
+        "start-test": 82,
+        "middle-test": 89,
+        "final-test": 95,
+        "start-project": 78,
+        "middle-project": 87,
+        "final-project": 92
+      }
+    },
+    {
+      "username": "michaelBrown131415",
+      "password": "Confidential5!",
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "grades": {
+        "start-test": 91,
+        "middle-test": 78,
+        "final-test": 83,
+        "start-project": 94,
+        "middle-project": 82,
+        "final-project": 90
+      }
+    },
+    {
+      "username": "emmaJones161718",
+      "password": "Protected6!",
+      "firstName": "Emma",
+      "lastName": "Jones",
+      "grades": {
+        "start-test": 88,
+        "middle-test": 92,
+        "final-test": 81,
+        "start-project": 87,
+        "middle-project": 79,
+        "final-project": 83
+      }
+    },
+    {
+      "username": "danielTaylor192021",
+      "password": "Secure7!",
+      "firstName": "Daniel",
+      "lastName": "Taylor",
+      "grades": {
+        "start-test": 95,
+        "middle-test": 83,
+        "final-test": 91,
+        "start-project": 76,
+        "middle-project": 89,
+        "final-project": 85
+      }
+    },
+    {
+      "username": "oliviaAnderson222324",
+      "password": "Secret8!",
+      "firstName": "Olivia",
+      "lastName": "Anderson",
+      "grades": {
+        "start-test": 78,
+        "middle-test": 87,
+        "final-test": 94,
+        "start-project": 91,
+        "middle-project": 95,
+        "final-project": 80
+      }
+    },
+    {
+      "username": "matthewThomas252627",
+      "password": "Private9!",
+      "firstName": "Matthew",
+      "lastName": "Thomas",
+      "grades": {
+        "start-test": 85,
+        "middle-test": 93,
+        "final-test": 78,
+        "start-project": 82,
+        "middle-project": 91,
+        "final-project": 88
+      }
+    },
+    {
+      "username": "sophiaJackson282930",
+      "password": "Confidential10!",
+      "firstName": "Sophia",
+      "lastName": "Jackson",
+      "grades": {
+        "start-test": 76,
+        "middle-test": 95,
+        "final-test": 83,
+        "start-project": 89,
+        "middle-project": 78,
+        "final-project": 92
+      }
+    },
+    {
+      "username": "andrewWhite313233",
+      "password": "Protected11!",
+      "firstName": "Andrew",
+      "lastName": "White",
+      "grades": {
+        "start-test": 90,
+        "middle-test": 78,
+        "final-test": 91,
+        "start-project": 83,
+        "middle-project": 93,
+        "final-project": 79
+      }
+    },
+    {
+      "username": "avaHarris343536",
+      "password": "Secure12!",
+      "firstName": "Ava",
+      "lastName": "Harris",
+      "grades": {
+        "start-test": 88,
+        "middle-test": 83,
+        "final-test": 90,
+        "start-project": 78,
+        "middle-project": 94,
+        "final-project": 81
+      }
+    },
+    {
+      "username": "jamesMartin373839",
+      "password": "Secret13!",
+      "firstName": "James",
+      "lastName": "Martin",
+      "grades": {
+        "start-test": 92,
+        "middle-test": 91,
+        "final-test": 85,
+        "start-project": 83,
+        "middle-project": 79,
+        "final-project": 88
+      }
+    },
+    {
+      "username": "isabellaThompson404142",
+      "password": "Private14!",
+      "firstName": "Isabella",
+      "lastName": "Thompson",
+      "grades": {
+        "start-test": 80,
+        "middle-test": 92,
+        "final-test": 88,
+        "start-project": 91,
+        "middle-project": 76,
+        "final-project": 83
+      }
+    },
+    {
+      "username": "josephGarcia434445",
+      "password": "Confidential15!",
+      "firstName": "Joseph",
+      "lastName": "Garcia",
+      "grades": {
+        "start-test": 94,
+        "middle-test": 81,
+        "final-test": 79,
+        "start-project": 88,
+        "middle-project": 95,
+        "final-project": 78
+      }
+    },
+    {
+      "username": "miaLopez464748",
+      "password": "Protected16!",
+      "firstName": "Mia",
+      "lastName": "Lopez",
+      "grades": {
+        "start-test": 81,
+        "middle-test": 88,
+        "final-test": 90,
+        "start-project": 76,
+        "middle-project": 78,
+        "final-project": 93
+      }
+    },
+    {
+      "username": "benjaminClark495051",
+      "password": "Secure17!",
+      "firstName": "Benjamin",
+      "lastName": "Clark",
+      "grades": {
+        "start-test": 87,
+        "middle-test": 79,
+        "final-test": 91,
+        "start-project": 95,
+        "middle-project": 92,
+        "final-project": 83
+      }
+    },
+    {
+      "username": "charlotteRodriguez525354",
+      "password": "Secret18!",
+      "firstName": "Charlotte",
+      "lastName": "Rodriguez",
+      "grades": {
+        "start-test": 79,
+        "middle-test": 92,
+        "final-test": 88,
+        "start-project": 90,
+        "middle-project": 85,
+        "final-project": 76
+      }
+    },
+    {
+      "username": "williamLee555657",
+      "password": "Private19!",
+      "firstName": "William",
+      "lastName": "Lee",
+      "grades": {
+        "start-test": 92,
+        "middle-test": 85,
+        "final-test": 83,
+        "start-project": 78,
+        "middle-project": 91,
+        "final-project": 89
+      }
+    }
+  ],
+  "admin": {
+    "username": "admin",
+    "password": "admin",
+    "firstName": "Admin",
+    "lastName": "User"
   }
+}
+
   

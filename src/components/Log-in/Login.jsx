@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import usersData from '../Data/users.json';
 import SignUp from './SignUp';
-import './Login.css'
+import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -18,7 +18,11 @@ const Login = () => {
 
     if (user) {
       // User found, navigate to the homepage
-      navigate('/');
+      navigate('/UserArea');
+      setError('');
+    } else if (usersData.admin.username === username && usersData.admin.password === password) {
+      // Admin login
+      navigate('/AdminArea');
       setError('');
     } else {
       // User not found or invalid credentials
@@ -28,24 +32,26 @@ const Login = () => {
 
   return (
     <div className='personal-area'>
-      <div className='login-container'>  
-       <h2>Login</h2>
-       <input className='input'
-         type="text"
-         placeholder="Username"
-         value={username}
-         onChange={(e) => setUsername(e.target.value)}
+      <div className='login-container'>
+        <h2>Login</h2>
+        <input
+          className='input'
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
         />
-       <br />
-       <input className='input'
-         type="password"
-         placeholder="Password"
-         value={password}
-         onChange={(e) => setPassword(e.target.value)}
+        <br />
+        <input
+          className='input'
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
-       <br />
-       <button onClick={handleLogin}>Login</button>
-       {error && <p style={{ color: 'red' }}>{error}</p>}
+        <br />
+        <button onClick={handleLogin}>Login</button>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
       </div>
       <div className='signup-container'>
         <SignUp />
@@ -55,3 +61,4 @@ const Login = () => {
 };
 
 export default Login;
+
