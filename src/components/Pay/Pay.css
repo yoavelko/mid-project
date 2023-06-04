@@ -1,0 +1,56 @@
+#go-back {
+    align-self: flex-end;
+    font-size: large;
+    margin-bottom: 7vh;
+}
+
+#go-back:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#credit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-input {
+    height: 5vh;
+    margin-top: 3vh;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#pay-button {
+    margin-top: 3vh;
+    width: 12vw;
+    height: 7vh;
+    border-radius: 25px;
+    border: 2px rgb(15,19,35) solid;
+    background-color: rgb(52, 65, 115);
+    color: white;
+    font-size: large;
+    transition: .3s;
+}
+
+#pay-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: white;
+    color: rgb(15,19,35);
+}
+
+#pay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(15,19,35);
+    color: white;
+}
+
+.pay-text {
+    margin-bottom: 5vh;
+}

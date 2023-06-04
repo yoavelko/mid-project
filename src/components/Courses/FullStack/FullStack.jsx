@@ -15,8 +15,9 @@ function FullStack() {
             setText('הסר מהסל');
             setCart([...cart, 'FullStack']);
         } else {
-            setStyle('personal-area');
+            setStyle('notification-two');
             setText('הוסף לסל');
+            setCart(cart.filter((value) => value != 'FullStack'));
         }
     }
 

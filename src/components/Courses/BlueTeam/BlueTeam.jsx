@@ -16,10 +16,12 @@ function BlueTeam() {
             setText('הסר מהסל');
             setCart([...cart, 'BlueTeam']);
         } else {
-            setStyle('personal-area');
+            setStyle('notification-two');
             setText('הוסף לסל');
+            setCart(cart.filter((value) => value != 'BlueTeam'));
         }
     }
+    console.log(cart);
 
     return (
         <div id='general-container'>
