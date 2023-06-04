@@ -18,11 +18,11 @@ function HomePage() {
                 <div id='ad-content'>
                     .ההכשרה היחדה שתבטיח לך קריירה מומצלחת בתעשיית ההייטק העתידית
                 </div>
-                <button className='buttons' id='sign-button'>
-                    <Link to={'/Login'}>
+                <Link to={'/Login'}>
+                    <button className='buttons' id='sign-button'>
                         הירשמו עכשיו
-                    </Link>
-                </button>
+                    </button>
+                </Link>
             </div>
 
             <div id='cyber-ad-header'>המומלצים ביותר</div>
@@ -94,7 +94,7 @@ function HomePage() {
                     <div id='fullstack-second-header'>Full-stack קורס</div>
                     <div id='fullstack-content'>למה לעבוד קשה כשאפשר לעבוד נכון? עולם התכנות של ימינו עשוי להיות מבלבל עם מגוון רחב של שפות תכנות שניתן להתמחות בהן. לכן כדי להתמחות בפיתוח צריך לדעת מה נכון ללמוד אבל גם לא פחות חשוב: לדעת על מה אפשר לוותר בשלב הנוכחי. מדובר בהחלטה דרמטית שתשפיע בסופו של דבר על הביקוש שלכם בשוק העבודה </div>
                     <Link to={'/FullStack'} onClick={() => window.scrollTo(0, 0)}><span id='full-stack-link'>קרא עוד &#x261A;</span></Link>
-                </div> 
+                </div>
             </div>
 
         </div>
