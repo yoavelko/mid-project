@@ -1,18 +1,17 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './AdminArea.css'
+import './Grading.css'
 import SideNavbar from "../Personal-Area-Navbar/SideNavbar";
 
-const AdminArea = () => {
+const Grading = () => {
     return (
-    <div className="admin-area-holder">
-        <div className="admin-area">
+    <div className="grading-area-holder">
+        <div className="grading-area">
             <div><h1>wellcom</h1></div>
         </div>
     </div>
 
     )
 }
-
-export default AdminArea
+export default Grading

@@ -1,18 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './AdminArea.css'
+import './UserStudyPresentation.css'
 import SideNavbar from "../Personal-Area-Navbar/SideNavbar";
 
-const AdminArea = () => {
+const UserStudyPresentation = () => {
     return (
-    <div className="admin-area-holder">
-        <div className="admin-area">
-            <div><h1>wellcom</h1></div>
+    <div className="user-study-area-holder">
+        <div className="userStudyArea">
+            
         </div>
     </div>
 
     )
 }
 
-export default AdminArea
+export default UserStudyPresentation

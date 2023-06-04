@@ -5,6 +5,7 @@
       "password": "user",
       "firstName": "John",
       "lastName": "Doe",
+      "course": null,
       "grades": {
         "start-test": 85,
         "middle-test": 92,
@@ -19,6 +20,7 @@
       "password": "Secure2!",
       "firstName": "Jane",
       "lastName": "Smith",
+      "course": null,
       "grades": {
         "start-test": 75,
         "middle-test": 80,
@@ -33,6 +35,7 @@
       "password": "Secret3!",
       "firstName": "David",
       "lastName": "Johnson",
+      "course": null,
       "grades": {
         "start-test": 93,
         "middle-test": 85,
@@ -47,6 +50,7 @@
       "password": "Private4!",
       "firstName": "Emily",
       "lastName": "Williams",
+      "course": null,
       "grades": {
         "start-test": 82,
         "middle-test": 89,
@@ -61,6 +65,7 @@
       "password": "Confidential5!",
       "firstName": "Michael",
       "lastName": "Brown",
+      "course": null,
       "grades": {
         "start-test": 91,
         "middle-test": 78,
@@ -75,6 +80,7 @@
       "password": "Protected6!",
       "firstName": "Emma",
       "lastName": "Jones",
+      "course": null,
       "grades": {
         "start-test": 88,
         "middle-test": 92,
@@ -89,6 +95,7 @@
       "password": "Secure7!",
       "firstName": "Daniel",
       "lastName": "Taylor",
+      "course": null,
       "grades": {
         "start-test": 95,
         "middle-test": 83,
@@ -103,6 +110,7 @@
       "password": "Secret8!",
       "firstName": "Olivia",
       "lastName": "Anderson",
+      "course": null,
       "grades": {
         "start-test": 78,
         "middle-test": 87,
@@ -117,6 +125,7 @@
       "password": "Private9!",
       "firstName": "Matthew",
       "lastName": "Thomas",
+      "course": null,
       "grades": {
         "start-test": 85,
         "middle-test": 93,
@@ -131,6 +140,7 @@
       "password": "Confidential10!",
       "firstName": "Sophia",
       "lastName": "Jackson",
+      "course": null,
       "grades": {
         "start-test": 76,
         "middle-test": 95,
@@ -145,6 +155,7 @@
       "password": "Protected11!",
       "firstName": "Andrew",
       "lastName": "White",
+      "course": null,
       "grades": {
         "start-test": 90,
         "middle-test": 78,
@@ -159,6 +170,7 @@
       "password": "Secure12!",
       "firstName": "Ava",
       "lastName": "Harris",
+      "course": null,
       "grades": {
         "start-test": 88,
         "middle-test": 83,
@@ -173,6 +185,7 @@
       "password": "Secret13!",
       "firstName": "James",
       "lastName": "Martin",
+      "course": null,
       "grades": {
         "start-test": 92,
         "middle-test": 91,
@@ -187,6 +200,7 @@
       "password": "Private14!",
       "firstName": "Isabella",
       "lastName": "Thompson",
+      "course": null,
       "grades": {
         "start-test": 80,
         "middle-test": 92,
@@ -201,6 +215,7 @@
       "password": "Confidential15!",
       "firstName": "Joseph",
       "lastName": "Garcia",
+      "course": null,
       "grades": {
         "start-test": 94,
         "middle-test": 81,
@@ -215,6 +230,7 @@
       "password": "Protected16!",
       "firstName": "Mia",
       "lastName": "Lopez",
+      "course": null,
       "grades": {
         "start-test": 81,
         "middle-test": 88,
@@ -229,6 +245,7 @@
       "password": "Secure17!",
       "firstName": "Benjamin",
       "lastName": "Clark",
+      "course": null,
       "grades": {
         "start-test": 87,
         "middle-test": 79,
@@ -243,6 +260,7 @@
       "password": "Secret18!",
       "firstName": "Charlotte",
       "lastName": "Rodriguez",
+      "course": null,
       "grades": {
         "start-test": 79,
         "middle-test": 92,
@@ -257,6 +275,7 @@
       "password": "Private19!",
       "firstName": "William",
       "lastName": "Lee",
+      "course": null,
       "grades": {
         "start-test": 92,
         "middle-test": 85,

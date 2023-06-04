@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './SideNavbar.css'
+import './AdminNavbar.css'
 
-const SideNavbar = () => {
+const AdminNavbar = () => {
     return (
         <div className="personal-area-holder">
          <div className="header-sidebar"></div>
@@ -16,10 +16,10 @@ const SideNavbar = () => {
          <div id="sidebarMenu">
            <ul className="sidebarMenuInner">
             <li className="sidebarItem" id="homepage"><Link to="/">Homepage</Link></li>
-            <li className="sidebarItem" id="grades"><Link to="/UserGradePage">Grades</Link></li>
-            <li className="sidebarItem" id="CourseCalander"><Link to="/CourseCalander">Course Calendar</Link></li>
-            <li className="sidebarItem" id="CourseTask"><Link to="/CourseTask">Course Task</Link></li>
-            <li className="sidebarItem" id="UserStudyPresentation"><Link to="/UserStudyPresentation">Study Presentations</Link></li>
+            <li className="sidebarItem" id="AdminCourseCalander"><Link to="/AdminCourseCalander">Course Calendar</Link></li>
+            <li className="sidebarItem" id="AdminCourseTask"><Link to="/AdminCourseTask">Course Task</Link></li>
+            <li className="sidebarItem" id="AdminStudyPresentation"><Link to="/AdminStudyPresentation">Study Presentations</Link></li>
+            <li className="sidebarItem" id="Grading"><Link to="/Grading">Grading</Link></li>
             <li className="sidebarItem" id="logout"><Link to="/Login">Log-out</Link></li>
            </ul>
       </div>
@@ -28,4 +28,4 @@ const SideNavbar = () => {
     )
 }
 
-export default SideNavbar
+export default AdminNavbar
