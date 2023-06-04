@@ -16,8 +16,9 @@ function Essentials() {
             setText('הסר מהסל');
             setCart([...cart, 'Essentials']);
         } else {
-            setStyle('personal-area');
+            setStyle('notification-two');
             setText('הוסף לסל');
+            setCart(cart.filter((value) => value != 'Essentials'));
         }
     }
 

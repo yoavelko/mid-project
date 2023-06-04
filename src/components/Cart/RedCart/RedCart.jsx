@@ -1,12 +1,17 @@
 import './RedCart.css'
-import { useState } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { cartContext } from '../../../Contexts/cartContext'
+import { priceContext } from '../../../Contexts/priceContext';
+import { Link } from 'react-router-dom';
 
 function RedCart() {
 
-    const octEnd = '19.02.2024'
-    const decEnd = '07.04.2024'
-    const marchEnd = '28.07.2024'
-    const [end, setEnd] = useState(octEnd)
+    const octEnd = '19.02.2024';
+    const decEnd = '07.04.2024';
+    const marchEnd = '28.07.2024';
+    const [end, setEnd] = useState(octEnd);
+    const { cart, setCart } = useContext(cartContext);
+    const { price, setPrice } = useContext(priceContext);
 
 
     function handleSelect(e) {
@@ -15,11 +20,20 @@ function RedCart() {
         if (e.target.value === 'march') { setEnd(marchEnd) }
     }
 
+    function removeHandler() {
+        setCart(cart.filter((value) => value != 'RedTeam'))
+    }
+
+    function handlePrice() {
+        setPrice('26,000₪')
+        window.scrollTo(0, 0)
+    }
+
     return (
         <div id='red-first-container'>
             <div id='red-second-container'>
                 <div id='red-cart-container'>
-                    <div id='red-front'>
+                    <div id='red-cart'>
                         <img id='cyber-imgs' src="https://cyberpro-israel.co.il/wp-content/uploads/2019/12/program_r_slider_icon_course_v0.1.svg" alt="" />
                         <div id='red-header'>Red Team Expert</div>
                         <div id='red-content'>הכשרת אנשי צוות אדום לבדיקות חדירה בתשתיות ובמערכות מידע</div>
@@ -38,8 +52,11 @@ function RedCart() {
                 </div>
                 <div>{end} :תאריך סיום</div>
                 <div>עלות: 26,000 ש"ח</div>
-                <div>
-                    <button>לתשלום</button>
+                <div id='buttons-container'>
+                    <Link to="/Pay" price='26,000'>
+                        <button className='cart-button' onClick={handlePrice}>לתשלום</button>
+                    </Link>
+                    <button className='cart-button' onClick={removeHandler}>הסר מהסל</button>
                 </div>
             </div>
         </div>
