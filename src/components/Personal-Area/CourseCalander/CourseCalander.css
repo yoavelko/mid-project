@@ -1,0 +1,18 @@
+.courseCalnder-area{
+    padding-top: 60px;
+}
+.calendarHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.courseCalendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.text-center{
+    padding-top: 10px;
+}

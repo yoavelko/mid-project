@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './AdminArea.css'
+import './CourseTask.css'
 import SideNavbar from "../Personal-Area-Navbar/SideNavbar";
 
-const AdminArea = () => {
+const CourseTask = () => {
     return (
-    <div className="admin-area-holder">
-        <div className="admin-area">
+    <div className="courseTask-area-holder">
+        <div className="courseTask-area">
             <div><h1>wellcom</h1></div>
         </div>
     </div>
@@ -15,4 +15,4 @@ const AdminArea = () => {
     )
 }
 
-export default AdminArea
+export default CourseTask
