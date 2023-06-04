@@ -2,6 +2,8 @@ import '../Courses.css'
 import { cartContext } from '../../../Contexts/cartContext';
 import { cartStyle } from '../../../Contexts/cartStyle';
 import { useContext , useState } from 'react';
+import RedCart from '../../Cart/RedCart/RedCart';
+
 
 
 function RedTeam() {
@@ -15,9 +17,11 @@ function RedTeam() {
             setStyle('notification');
             setText('הסר מהסל');
             setCart([...cart, 'RedTeam']);
+            console.log(cart);
         } else {
-            setStyle('personal-area');
+            setStyle('notification-two');
             setText('הוסף לסל');
+            setCart(cart.filter((value) => value != 'RedTeam'));
         }
     }
 

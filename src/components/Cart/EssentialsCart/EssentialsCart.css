@@ -1,4 +1,4 @@
-#red-cart {
+#essentials-cart {
     position: absolute;
     width: 120%;
     height: 100%;
@@ -11,14 +11,14 @@
     border-radius: 0;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-image: url('https://cyberpro-israel.co.il/wp-content/uploads/2020/05/Red-1600.jpg');
+    background-image: url('https://cyberpro-israel.co.il/wp-content/uploads/2020/05/program_f_bg.jpg');
     background-size: 100% 100%;
     padding: 5vh;
     height: 80%;
     width: 100%;
 }
 
-#red-cart-container {
+#essentials-cart-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -33,7 +33,7 @@
     padding-right: 2vw;
 }
 
-#red-first-container {
+#essentials-first-container {
     height: 50vh;
     color: white;
     display: flex;
@@ -43,7 +43,7 @@
     padding-bottom: 15vh;
 }
 
-#red-second-container {
+#essentials-second-container {
     width: 25%;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
     border-radius: 25px;
 }
 
-#red-cart-content-container {
+#essentials-cart-content-container {
     color: black;
     align-items: baseline;
     text-align: end;
