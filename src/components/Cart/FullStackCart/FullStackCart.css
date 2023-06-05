@@ -90,3 +90,46 @@
     width: 17%;
     height: auto;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    #fullstack-first-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #fullstack-second-container {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #fullstack-cart-content-container {
+        padding-top: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #fullstack-cart {
+        height: 100%;
+    }
+
+    #cyber-imgs {
+        display: none;
+    }
+
+    .cart-button {
+        width: 120px;
+    }
+
+    #fullstack-cart-img {
+        display: none;
+    }
+
+    #fullstack-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

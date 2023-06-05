@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './SignUp.css'
 
 const SignUp = () => {
 
@@ -39,7 +38,7 @@ const SignUp = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Sign-Up</h2>
+      <h2 id='signup-header'>Sign-Up</h2>
       <div className='sign-inputs'>
         <label className='first-name'>
           First Name: <br />

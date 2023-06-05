@@ -26,6 +26,7 @@ function HomePage() {
             </div>
 
             <div id='cyber-ad-header'>המומלצים ביותר</div>
+            <div id='cyber-ad-hidden'>adb</div>
             <div id='cyber-ad'>
                 <div id='cyber-ad-container'>
                     <div className='cyber-ads' id='red-container'>

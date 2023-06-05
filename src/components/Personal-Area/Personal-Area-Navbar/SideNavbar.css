@@ -142,10 +142,54 @@
 #logged-as {
   font-size: small;
   padding-right: 2vw;
-  width: 6vw;
+  width: 8vw;
 }
 
 #space-between{
-  width: 6vw;
+  width: 8vw;
   padding-left: 2vw;
+}
+
+#grades {
+  display: block;
+}
+
+#hidden-grades {
+  display: none;
+}
+
+#grading {
+  display: block;
+}
+
+#hidden-grading {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #logged-as {
+    width: 25vw;
+    padding-right: 5vw;
+  }
+  
+  #space-between{
+    width: 25vw;
+    padding-left: 5vw;
+  }
+
+  .userArea {
+    padding-top: 20%;
+  }
+
+  #navigate {
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .navigate {
+    width: 50%;
+    margin-bottom: 5vh;
+  }
+
 }
