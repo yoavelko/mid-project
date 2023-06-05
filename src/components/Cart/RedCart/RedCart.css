@@ -82,3 +82,37 @@
     background-color: white;
     color: rgb(15,19,35);
 }
+
+
+@media screen and (max-width: 768px) {
+
+    #red-first-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #red-second-container {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #red-cart-content-container {
+        padding-top: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #red-cart {
+        height: 100%;
+    }
+
+    #cyber-imgs {
+        display: none;
+    }
+
+    .cart-button {
+        width: 120px;
+    }
+
+}

@@ -74,3 +74,20 @@
 #hidden {
     display: none;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .user-study-area-holder {
+
+        padding-top: 25%;
+    }
+
+    .files-outer-container {
+        width: 80vw;
+    }
+
+    #visible-btn {
+        width: 20px;
+    }
+}

@@ -16,3 +16,11 @@
 .grades-headers {
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    #grades-container {
+        width: auto;
+    }
+}

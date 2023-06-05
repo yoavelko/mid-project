@@ -304,3 +304,34 @@ a:visited:hover {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+
+#cyber-ad-hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+    #ad-container {
+        height: 80vh;
+        padding: 5%;
+    }
+
+    #sign-button {
+        width: 130px;
+    }
+
+    #cyber-ad {
+        display: none;
+    }
+
+    #fullstack-flex {
+        display: none;
+    }
+
+    #cyber-ad-hidden {
+        display: block;
+        background-color: rgb(15,19,35);
+        color: white;
+    }
+}
