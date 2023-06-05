@@ -26,7 +26,7 @@ const UserArea = () => {
                     <Link className="nav-links" to='/UserGradePage'>Grades</Link>
                 </div>
                 <div className="navigate" id="personal-schedule">
-                    <Link className="nav-links" to='CourseCalander'>Schedule</Link>
+                    <Link className="nav-links" to='/CourseCalander'>Schedule</Link>
                 </div>
                 <div className="navigate" id="personal-files">
                     <Link className="nav-links" to='/UserStudyPresentation'>Files</Link>

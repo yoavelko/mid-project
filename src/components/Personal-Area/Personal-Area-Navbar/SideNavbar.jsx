@@ -21,7 +21,6 @@ const SideNavbar = () => {
     }
   }, [])
 
-
   
     return (
         <div className="personal-area-holder">
