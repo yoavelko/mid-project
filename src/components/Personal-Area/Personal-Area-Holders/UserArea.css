@@ -4,9 +4,50 @@
     justify-content: center;
     align-items: center;
     height: 60 px;
-    padding-top: 60px;
+    padding-top: 10%;
     color: black;
 }
-.ss{
-    color: black;
+
+#navigate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+
+.navigate {
+    width: 22.5%;
+    height: 60%;
+    transition: .2s;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}
+
+.navigate:hover {
+    transform: scale(1.1);
+}
+
+#personal-grades {
+    background-image: url('https://s30876.pcdn.co/wp-content/uploads/Examination-Boards-1170x630.jpg.optimal.jpg');
+    background-size: 140% 100%;
+}
+
+#personal-schedule {
+    background-image: url('https://fellow.app/wp-content/uploads/2022/09/How-to-Organize-a-Busy-Schedule-2.jpg');
+    background-size: 100% 100%;
+}
+
+#personal-tasks {
+    background-image: url('https://assets-site.staticpipefy.com/production/wp-content/uploads/2021/06/ux-indonesia-qC2n6RQU4Vw-unsplash-1-960x640.jpg');
+    background-size: 100% 100%;
+}
+
+#personal-files {
+    background-image: url('https://aem.dropbox.com/cms/content/dam/dropbox/dmep/assets/articles/30_What-is-a-zip-file_Hero.jpg');
+    background-size: 100% 100%;
 }

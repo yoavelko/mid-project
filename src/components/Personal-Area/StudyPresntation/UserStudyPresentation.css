@@ -1,0 +1,76 @@
+.user-study-area-holder {
+    padding-top: 10%;
+}
+
+#files {
+    color: black;
+    border: 2px solid black;
+    padding-left: 1.2vw;
+    margin-bottom: 2vh;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15px;
+}
+
+#files:hover {
+    color: rgb(116, 116, 116);
+}
+
+.files-outer-container {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.files-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.userStudyArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 5vh;
+}
+
+#pdf-img {
+    width: 16px;
+    transform: translateY(0.3vh);
+}
+
+.files-headers {
+    margin-left: 1.4vw;
+    margin-top: 2vh;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+}
+
+#files-header {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+#visible-btn {
+    display: block;
+    width: 1.2vw;
+    transform: translateY(1vh);
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+    height: 3vh;
+    margin-right: 0.5vw;
+}
+
+#hidden-btn {
+    display: none;
+}
+
+#visible {
+    display: flex;
+    flex-direction: column;
+}
+
+#hidden {
+    display: none;
+}

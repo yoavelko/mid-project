@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SignUp.css'
 
 const SignUp = () => {
 
@@ -38,44 +39,48 @@ const SignUp = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-        <h2>Sign-Up</h2>
-      <label className='first-name'>
-        First Name:
-        <input className='input'
-          type="text"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-      </label>
-      <br />
-      <label className='last-name'>
-        Last Name:
-        <input className='input'
-          type="text"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-        />
-      </label>
-      <br />
-      <label className='password'>
-        Password:
-        <input className='input'
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </label>
-      <br />
-      <label className='username'>
-        Username:
-        <input className='input'
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </label>
-      <br />
-      <button type="submit">Sign Up</button>
+      <h2>Sign-Up</h2>
+      <div className='sign-inputs'>
+        <label className='first-name'>
+          First Name: <br />
+          <input className='input'
+            type="text"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className='sign-inputs'>
+        <label className='last-name'>
+          Last Name: <br />
+          <input className='input'
+            type="text"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className='sign-inputs'>
+        <label className='password'>
+          Password: <br />
+          <input className='input'
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className='sign-inputs'>
+        <label className='username'>
+          Username: <br />
+          <input className='input'
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </label>
+      </div>
+      <button type="submit" className='login-buttons'>Sign Up</button>
     </form>
   );
 };
