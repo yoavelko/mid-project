@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './SideNavbar.css'
 import { userIndexContext } from "../../../Contexts/userIndexContext";
@@ -8,6 +8,18 @@ import usersData from '../../Data/users.json';
 const SideNavbar = () => {
 
   const { userIndex } = useContext(userIndexContext)
+  const [grades, setGrades] = useState('')
+  const [grading, setGrading] = useState('')
+
+  useEffect(() =>{
+    if (usersData.users[userIndex].username === 'admin'){
+      setGrades('hidden-grades')
+      setGrading('grading')
+    } else {
+      setGrades('grades')
+      setGrading('hidden-grading')
+    }
+  }, [])
 
   
     return (
@@ -26,7 +38,8 @@ const SideNavbar = () => {
          <div id="sidebarMenu">
            <ul className="sidebarMenuInner">
             <li className="sidebarItem" id="homepage"><Link to="/UserArea">Navigate</Link></li>
-            <li className="sidebarItem" id="grades"><Link to="/UserGradePage">Grades</Link></li>
+            <li className="sidebarItem" id={grades}><Link to="/UserGradePage">Grades</Link></li>
+            <li className="sidebarItem" id={grading}><Link to="/Grading">Grading</Link></li>
             <li className="sidebarItem" id="CourseCalander"><Link to="/CourseCalander">Course's Schedule</Link></li>
             <li className="sidebarItem" id="UserStudyPresentation"><Link to="/UserStudyPresentation">Files</Link></li>
             <li className="sidebarItem" id="logout"><Link to="/Login">Log-out</Link></li>

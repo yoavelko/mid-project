@@ -149,3 +149,17 @@
   width: 6vw;
   padding-left: 2vw;
 }
+
+#grades {
+  display: block;
+}
+
+#hidden-grades {
+  display: none;
+}
+#grading{
+  display: block;
+}
+#hidden-grading{
+  display: none;
+}

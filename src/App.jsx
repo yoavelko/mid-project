@@ -17,7 +17,6 @@ import UserGradePage from './components/Personal-Area/User-Holder/UserGradePage'
 import Grading from './components/Personal-Area/Admin-Holder/Grading'
 import Cart from './components/Cart/Cart'
 import { useState } from 'react'
-import CourseTask from './components/Personal-Area/CourseTask/CourseTask'
 import CourseCalander from './components/Personal-Area/CourseCalander/CourseCalander'
 import UserStudyPresentation from './components/Personal-Area/StudyPresntation/UserStudyPresentation'
 import { loginContext } from './Contexts/loginContext'
@@ -64,7 +63,6 @@ function App() {
                           <Route path='UserArea' element={<div> <SideNavbar /> <UserArea /> </div>} />
                           <Route path='UserGradePage' element={<div> <SideNavbar /> <UserGradePage /> </div>} />
                           <Route path='Grading' element={<div> <SideNavbar /> <Grading /> </div>} />
-                          <Route path='CourseTask' element={<div> <SideNavbar /> <CourseTask /> </div>} />
                           <Route path='CourseCalander' element={<div> <SideNavbar /> <CourseCalander /> </div>} />
                           <Route path='UserStudyPresentation' element={<div> <SideNavbar /> <UserStudyPresentation /> </div>} />
                           <Route path='Cart' element={<div> <Header /> <Cart /> <Footer /> </div>} />
