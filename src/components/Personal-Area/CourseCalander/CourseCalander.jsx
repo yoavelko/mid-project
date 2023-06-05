@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './CourseCalander.css';
 import { useState } from 'react';
-import { EventContext } from '../EventContext';
+// import { EventContext } from '../EventContext';
 
 const CourseCalander = () => {
     const { addEvent, getEventsByDate } = useContext(EventContext);

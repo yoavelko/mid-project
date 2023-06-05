@@ -3,7 +3,12 @@
     width: 100%;
     background-color: rgb(15, 19, 35);
     position: fixed;
-    height: 60px!important;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xx-large;
   }
   
   .main {
@@ -80,6 +85,7 @@
   .sidebarIconToggle {
     transition: all 0.3s;
     cursor: pointer;
+    position: fixed;
     z-index: 99;
     height: 100%;
     width: 100%;
@@ -133,3 +139,13 @@
     margin-top: -9px;
   }
   
+#logged-as {
+  font-size: small;
+  padding-right: 2vw;
+  width: 6vw;
+}
+
+#space-between{
+  width: 6vw;
+  padding-left: 2vw;
+}

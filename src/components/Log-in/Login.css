@@ -2,11 +2,30 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 60vh;
+    height: 80vh;
     line-height: 8vh;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 .input{
     height: 4vh;
     width: 12vw;
+}
+
+.login-buttons {
+    margin-top: 4vh;
+    width: 12vw;
+    height: 7vh;
+    border-radius: 25px;
+    border: 2px rgb(15,19,35) solid;
+    background-color: rgb(15,19,35);
+    color: white;
+    font-size: large;
+    transition: .3s;
+}
+
+.login-buttons:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: white;
+    color: rgb(15,19,35);
 }
