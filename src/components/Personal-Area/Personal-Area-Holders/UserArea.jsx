@@ -11,19 +11,26 @@ import usersData from '../../Data/users.json';
 
 const UserArea = () => {
 
-    const { userIndex, setUserIndex} = useContext(userIndexContext)
-    const {login, setLogin} = useContext(loginContext);
+    const { userIndex, setUserIndex } = useContext(userIndexContext)
+    const { login, setLogin } = useContext(loginContext);
 
     return (
         <div className="personal-area-container">
             <div className="userArea">
-                <h3>Welcome back, {usersData.users[userIndex].firstName}!</h3>
+                <h1>Welcome back, {usersData.users[userIndex].firstName}!</h1>
+                <br />
+                <h3>Fast Navigate:</h3>
             </div>
             <div id="navigate">
-                <div className="navigate" id="personal-grades">Grades</div>
-                <div className="navigate" id="personal-schedule">Schedule</div>
-                <div className="navigate" id="personal-tasks">Tasks</div>
-                <div className="navigate" id="personal-files">Files</div>
+                <div className="navigate" id="personal-grades">
+                    <Link className="nav-links" to='/UserGradePage'>Grades</Link>
+                </div>
+                <div className="navigate" id="personal-schedule">
+                    <Link className="nav-links" to='CourseCalander'>Schedule</Link>
+                </div>
+                <div className="navigate" id="personal-files">
+                    <Link className="nav-links" to='/UserStudyPresentation'>Files</Link>
+                </div>
             </div>
         </div>
     );

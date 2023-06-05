@@ -3,16 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60 px;
     padding-top: 10%;
     color: black;
+    flex-direction: column;
+    line-height: 8vh;
 }
 
 #navigate {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
 }
 
 .navigate {
@@ -35,6 +36,16 @@
 #personal-grades {
     background-image: url('https://s30876.pcdn.co/wp-content/uploads/Examination-Boards-1170x630.jpg.optimal.jpg');
     background-size: 140% 100%;
+}
+
+.nav-links {
+    color: white;
+    transition: .2s;
+}
+
+.nav-links:hover {
+    color: black;
+    scale: 1.2;
 }
 
 #personal-schedule {
