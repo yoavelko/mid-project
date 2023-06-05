@@ -1,3 +1,20 @@
+.calendar-holder{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.calendar-container{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
 .courseCalnder-area{
     padding-top: 60px;
 }
@@ -5,13 +22,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .courseCalendar{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 .text-center{
     padding-top: 10px;
