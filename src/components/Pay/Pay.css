@@ -54,3 +54,10 @@
 .pay-text {
     margin-bottom: 5vh;
 }
+
+@media screen and (max-width: 768px) {
+
+    #pay-button {
+        width: 120px;
+    }
+}

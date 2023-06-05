@@ -176,3 +176,69 @@
     height: 100%;
     color: white;
 }
+
+#hidden-fullstack{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #cyber-red-header-container {
+        padding: 0;
+        text-align: center;
+    }
+
+    #cyber-blue-header-container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .red-course-container {
+        height: 50vh;
+    }
+
+    .blue-course-container {
+        height: 50vh;
+    }
+
+    .essentials-course-container {
+        height: 50vh;
+    }
+
+    .courses-header {
+        padding-top: 1vh;
+        font-size: x-large;
+    }
+
+    #red-course-content{
+        padding: 5%;
+        padding-top: 5vh;
+    }
+
+    .fullstack-course-container {
+        height: 50vh;
+    }
+
+    .schedule-button {
+        width: 120px;
+    }
+
+    .qulifications {
+        width: 70px;
+        margin-bottom: 2vw;
+    }
+
+    #qulifications-container-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #fullstack-header {
+        display: none;
+    }
+
+    #hidden-fullstack{
+        display: block;
+    }
+}

@@ -8,16 +8,16 @@ import usersData from '../../Data/users.json';
 const SideNavbar = () => {
 
   const { userIndex } = useContext(userIndexContext)
-  const [grades, setGrades] = useState('')
-  const [grading, setGrading] = useState('')
+  const [ grades, setGrades ] = useState('')
+  const [ grading, setGrading ] = useState('')
 
-  useEffect(() =>{
-    if (usersData.users[userIndex].username === 'admin'){
-      setGrades('hidden-grades')
-      setGrading('grading')
+  useEffect(()=>{
+    if (usersData.users[userIndex].username === 'admin') {
+      setGrades('hidden-grades');
+      setGrading('grading');
     } else {
-      setGrades('grades')
-      setGrading('hidden-grading')
+      setGrades('grades');
+      setGrading('hidden-grading');
     }
   }, [])
 
