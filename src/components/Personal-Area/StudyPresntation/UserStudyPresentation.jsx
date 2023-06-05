@@ -52,6 +52,9 @@ import JSON from '../../../../Files/FullStack/JavaScript/JSON.pdf'
 import JSloopsmethodsExercises from '../../../../Files/FullStack/JavaScript/JSloopsmethodsExercises.pdf'
 import DOMmanipulation from '../../../../Files/FullStack/JavaScript/DOMmanipulation.pdf'
 import WeatherappvanillaJS from '../../../../Files/FullStack/JavaScript/WeatherappvanillaJS.pdf'
+import { introContext } from "../../../Contexts/introContext";
+import { htmlContext } from '../../../Contexts/htmlContext';
+import { jsContext } from '../../../Contexts/jsContext';
 
 
 
@@ -64,6 +67,9 @@ const UserStudyPresentation = () => {
     const [btn, setBtn] = useState('-');
     const [btnStyle, setBtnStyle] = useState('hidden-btn');
     const { userIndex } = useContext(userIndexContext);
+    const {introStyle, setIntroStyle} = useContext(introContext);
+    const {htmlStyle, setHtmlStyle} = useContext(htmlContext);
+    const {jsStyle, setJsStyle} = useContext(jsContext);
 
 
     useEffect(()=> {
@@ -73,31 +79,31 @@ const UserStudyPresentation = () => {
     }, [])
 
     function handleIntroDisplay() {
-        if (displayIntroStyle === 'visible') {
-            setDisplayIntroStyle('hidden');
+        if (introStyle === 'visible') {
+            setIntroStyle('hidden');
             setBtn('+');
         } else {
-            setDisplayIntroStyle('visible');
+            setIntroStyle('visible');
             setBtn('-');
         }
     }
 
     function handleHTMLDisplay() {
-        if (displayHTMLStyle === 'visible') {
-            setDisplayHTMLStyle('hidden');
+        if (htmlStyle === 'visible') {
+            setHtmlStyle('hidden');
             setBtn('+');
         } else {
-            setDisplayHTMLStyle('visible');
+            setHtmlStyle('visible');
             setBtn('-');
         }
     }
 
     function handleJSDisplay() {
-        if (displayJSStyle === 'visible') {
-            setDisplayJSStyle('hidden');
+        if (jsStyle === 'visible') {
+            setJsStyle('hidden');
             setBtn('+');
         } else {
-            setDisplayJSStyle('visible');
+            setJsStyle('visible');
             setBtn('-');
         }
     }
@@ -108,7 +114,7 @@ const UserStudyPresentation = () => {
                 <div id="files-header">Course's Files</div>
                 <div className="files-outer-container">
                     <div className="files-headers"><button id={btnStyle} onClick={handleIntroDisplay}>{btn}</button> Intro Basics</div>
-                    <div className="files-container" id={displayIntroStyle}>
+                    <div className="files-container" id={introStyle}>
                         <a id="files" href={command} download>{pdfImg} command line navigation v0.1</a>
                         <a id="files" href={downloads} download>{pdfImg} Downloads v0.1</a>
                         <a id="files" href={GITcheatsheat} download>{pdfImg} GIT Cheatsheat v0.1</a>
@@ -120,7 +126,7 @@ const UserStudyPresentation = () => {
                 </div>
                 <div className="files-outer-container">
                     <div className="files-headers"><button id={btnStyle} onClick={handleHTMLDisplay}>{btn}</button> HTML & CSS</div>
-                    <div className="files-container" id={displayHTMLStyle}>
+                    <div className="files-container" id={htmlStyle}>
                         <a id="files" href={ApplyingCSStoHTML} download>{pdfImg} Applying CSS to HTML v0.1</a>
                         <a id="files" href={Boxmodel} download>{pdfImg} Box model v0.1</a>
                         <a id="files" href={CSSGrid} download>{pdfImg} CSS Grid</a>
@@ -141,7 +147,7 @@ const UserStudyPresentation = () => {
                 </div>
                 <div className="files-outer-container">
                     <div className="files-headers"><button id={btnStyle} onClick={handleJSDisplay}>{btn}</button> JavaScript</div>
-                    <div className="files-container" id={displayJSStyle}>
+                    <div className="files-container" id={jsStyle}>
                         <a id="files" href={Recommendedlearningsites} download>{pdfImg} Recommended learning sites</a>
                         <a id="files" href={Javascriptsyntax} download>{pdfImg} Javascript syntax v0.1</a>
                         <a id="files" href={JSVariables} download>{pdfImg} JS Variables v0.1</a>
