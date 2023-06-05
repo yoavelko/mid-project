@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import './CourseCalander.css';
-import { useState } from 'react';
 import Time from './Time';
+import 'react-calendar/dist/Calendar.css'
 
 const CourseCalander = () => {
 
