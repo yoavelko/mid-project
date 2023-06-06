@@ -369,6 +369,7 @@ display: none;
   justify-content: space-between;
   align-items: center;
   font-size: xx-large;
+  z-index: 999;
 }
 
 .main {
@@ -401,6 +402,7 @@ display: none;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
   background: linear-gradient(180deg,  rgb(15, 19, 35) 0%,  rgb(15, 19, 35) 100%);
+  z-index: 999;
 }
 
 .sidebarMenuInner {
@@ -559,7 +561,7 @@ display: none;
 
   .responsive-navbar {
     display: block;
-    padding-bottom: 10vh;
+    padding-bottom: 8vh;
   }
 
   #header {
