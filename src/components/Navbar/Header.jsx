@@ -50,7 +50,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <Link to="/Login">
+
           <div className="nav-item" id={style}>
             איזור אישי
             <div id="personal-dropdown">
@@ -66,7 +66,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-        </Link>
+      
       </div>
 
 
