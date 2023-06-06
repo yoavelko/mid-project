@@ -83,12 +83,14 @@ const Header = () => {
         </label>
         <div id="sidebarMenu">
           <ul className="sidebarMenuInner">
-            <li className="sidebarItem" id="homepage"><Link to="/UserArea">Navigate</Link></li>
-            <li className="sidebarItem" id="homepage"><Link to="/UserGradePage">Grades</Link></li>
-            <li className="sidebarItem" id="homepage"><Link to="/Grading">Grading</Link></li>
-            <li className="sidebarItem" id="CourseCalander"><Link to="/CourseCalander">Course's Schedule</Link></li>
-            <li className="sidebarItem" id="UserStudyPresentation"><Link to="/UserStudyPresentation">Files</Link></li>
-            <li className="sidebarItem" id="logout"><Link to="/Login">Log-out</Link></li>
+            <li className="sidebarItem" id="homepage"><Link to="/">דף הבית</Link></li>
+            <li className="sidebarItem" id="homepage"><Link to="/About">אודות</Link></li>
+            <li className="sidebarItem" id="homepage"><Link to="/RedTeam">Red Team Expert</Link></li>
+            <li className="sidebarItem" id="homepage"><Link to="/BlueTeam">Blue Team Defender</Link></li>
+            <li className="sidebarItem" id="homepage"><Link to="/Essentials">Cyber Essentials</Link></li>
+            <li className="sidebarItem" id="homepage"><Link to="/FullStack">Full-Stack Development</Link></li>
+            <li className="sidebarItem" id="CourseCalander"><Link to="/Login">התחברות</Link></li>
+            <li className="sidebarItem" id="UserStudyPresentation"><Link to="/Cart">הסל שלי</Link></li>
           </ul>
         </div>
       </div>

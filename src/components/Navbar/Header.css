@@ -354,7 +354,7 @@ display: none;
     padding-bottom: 10vh;
   }
 
-  .header {
+  #header {
     display: none;
   }
 }
