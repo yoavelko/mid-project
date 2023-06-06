@@ -54,12 +54,14 @@
 
 #visible-btn {
     display: block;
-    width: 1.2vw;
     transform: translateY(1vh);
     background-color: rgb(225, 225, 225);
+}
+.foldBtn{
     border-radius: 5px;
     height: 3vh;
     margin-right: 0.5vw;
+    width: 1.2vw;
 }
 
 #hidden-btn {

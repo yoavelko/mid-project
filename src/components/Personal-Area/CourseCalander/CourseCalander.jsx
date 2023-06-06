@@ -7,12 +7,13 @@ import { introContext } from "../../../Contexts/introContext";
 import { htmlContext } from '../../../Contexts/htmlContext';
 import { jsContext } from '../../../Contexts/jsContext';
 import { userIndexContext } from "../../../Contexts/userIndexContext";
+import { EventContext } from '../../../Contexts/EventContext';
+import { EventProvider } from '../../../Contexts/EventProvider'
 import usersData from '../../../components/Data/users.json'
 
 const CourseCalander = () => {
   const [date, setDate] = useState(new Date());
   const [showTime, setShowTime] = useState(false);
-  const [events, setEvents] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [displayIntroStyle, setDisplayIntroStyle] = useState('visible');
   const [displayHTMLStyle, setDisplayHTMLStyle] = useState('visible');
@@ -24,6 +25,7 @@ const CourseCalander = () => {
   const { htmlStyle, setHtmlStyle } = useContext(htmlContext);
   const { jsStyle, setJsStyle } = useContext(jsContext);
 
+  const { events, addEvent, removeEvent } = useContext(EventContext);
 
   useEffect(() => {
     if (usersData.users[userIndex].username === 'admin') {
@@ -31,12 +33,11 @@ const CourseCalander = () => {
     } else {
       setBtnStyle('hidden-btn')
     }
-  }, [])
-
+  }, []);
 
 
   const handleRemove = (eventToRemove) => {
-    setEvents(events.filter((event) => event !== eventToRemove));
+    removeEvent(eventToRemove);
   };
 
   let counter = 1
@@ -49,7 +50,7 @@ const CourseCalander = () => {
       startTime: date.toDateString(),
       endTime: date.toDateString(),
     };
-    setEvents([...events, newEvent]);
+    addEvent(newEvent);
     setInputValue('');
   };
 
@@ -85,13 +86,11 @@ const CourseCalander = () => {
             {event.title}
           </p>
           <p>
-            <span>Start:</span>
             {event.startTime}
             &nbsp;
             &nbsp;
-            <span>End:</span>{event.endTime}
           </p>
-          <button onClick={() => handleRemove(event)}>Remove</button>
+          <button className='remove-event-button' id={btnStyle} onClick={() => handleRemove(event)}>Remove</button>
         </div>
       ))}
     </div>
@@ -99,3 +98,4 @@ const CourseCalander = () => {
 }
 
 export default CourseCalander;
+

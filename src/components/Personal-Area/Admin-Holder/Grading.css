@@ -1,0 +1,32 @@
+.grade-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .full-name {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .grades {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Optional styling for spacing */
+  .grade-line:first-child {
+    margin-top: 10px;
+  }
+  
+  .grade-line:last-child {
+    margin-bottom: 10px;
+  }
+  

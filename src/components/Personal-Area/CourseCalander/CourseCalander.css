@@ -48,9 +48,17 @@
     width: 6vw;
     height: 4vh;
     border-radius: 5px;
+    margin: 4px;
 }
 .event-input{
     width: 10vw;
+    height: 4vh;
+    border-radius: 5px;
+    margin: 4px;
+}
+.remove-event-button{
+    width: 6vw;
+    margin: 4px;
     height: 4vh;
     border-radius: 5px;
 }

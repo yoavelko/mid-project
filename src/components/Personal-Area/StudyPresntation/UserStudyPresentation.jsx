@@ -113,7 +113,7 @@ const UserStudyPresentation = () => {
             <div className="userStudyArea">
                 <div id="files-header">Course's Files</div>
                 <div className="files-outer-container">
-                    <div className="files-headers"><button id={btnStyle} onClick={handleIntroDisplay}>{btn}</button> Intro Basics</div>
+                    <div className="files-headers"><button className="foldBtn" id={btnStyle} onClick={handleIntroDisplay}>{btn}</button> Intro Basics</div>
                     <div className="files-container" id={introStyle}>
                         <a id="files" href={command} download>{pdfImg} command line navigation v0.1</a>
                         <a id="files" href={downloads} download>{pdfImg} Downloads v0.1</a>
@@ -125,7 +125,7 @@ const UserStudyPresentation = () => {
                     </div>
                 </div>
                 <div className="files-outer-container">
-                    <div className="files-headers"><button id={btnStyle} onClick={handleHTMLDisplay}>{btn}</button> HTML & CSS</div>
+                    <div className="files-headers"><button className="foldBtn" id={btnStyle} onClick={handleHTMLDisplay}>{btn}</button> HTML & CSS</div>
                     <div className="files-container" id={htmlStyle}>
                         <a id="files" href={ApplyingCSStoHTML} download>{pdfImg} Applying CSS to HTML v0.1</a>
                         <a id="files" href={Boxmodel} download>{pdfImg} Box model v0.1</a>
@@ -146,7 +146,7 @@ const UserStudyPresentation = () => {
                     </div>
                 </div>
                 <div className="files-outer-container">
-                    <div className="files-headers"><button id={btnStyle} onClick={handleJSDisplay}>{btn}</button> JavaScript</div>
+                    <div className="files-headers"><button className="foldBtn" id={btnStyle} onClick={handleJSDisplay}>{btn}</button> JavaScript</div>
                     <div className="files-container" id={jsStyle}>
                         <a id="files" href={Recommendedlearningsites} download>{pdfImg} Recommended learning sites</a>
                         <a id="files" href={Javascriptsyntax} download>{pdfImg} Javascript syntax v0.1</a>
