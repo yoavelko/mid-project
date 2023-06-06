@@ -11,6 +11,141 @@
   overflow: visible;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(15, 19, 35);
+  width: 100%;
+  font-size: x-large;
+  position: fixed;
+  z-index: 999;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  color: rgb(179,179,179);
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#dropdown {
+  position: relative;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  left: -50%;
+  background-color: rgb(15, 19, 35);
+  transition: transform 0.3s ease;
+  transform: translateY(-10px);
+  opacity: 0;
+  height: 28vh;
+  width: 200%;
+  font-size: large;
+  line-height: 7vh;
+  padding: 10%;
+  color: rgb(179,179,179);
+}
+
+.dropdown-content {
+  color: rgb(179,179,179);
+}
+
+#dropdown:hover #dropdown-content , #dropdown-contant:hover{
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dropdown-content:hover {
+  color: white;
+}
+
+#logo-container {
+  width: 10%;
+  display: flex;
+  margin-right: -5vw;
+  margin-top: 2vh;
+}
+
+#header-logo {
+  width: 100%;
+  transition: 0.3s;
+}
+
+#logo-container:hover #header-logo {
+  transform: scale(1.1);
+}
+
+#notification {
+  animation: notification 0.8s;
+  position: relative;
+}
+
+@keyframes notification {
+  0% {color: rgb(179,179,179); transform: scale(1);}
+  50% {color: red; transform: scale(1.1);}
+  100% {color: rgb(179,179,179); transform: scale(1);}
+}
+
+#notification-two {
+  animation: notification-two 0.8s;
+  position: relative;
+}
+
+@keyframes notification-two {
+  0% {color: rgb(179,179,179); transform: scale(1);}
+  50% {color: red; transform: scale(1.1);}
+  100% {color: rgb(179,179,179); transform: scale(1);}
+}
+
+#personal-area {
+  position: relative;
+}
+
+#personal-dropdown {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  left: -50%;
+  background-color: rgb(15, 19, 35);
+  transition: transform 0.3s ease;
+  transform: translateY(-10px);
+  opacity: 0;
+  height: 14vh;
+  width: 200%;
+  font-size: x-large;
+  line-height: 7vh;
+  padding: 10%;
+  color: rgb(179,179,179);
+}
+
+.personal-dropdown {
+  color: rgb(179,179,179);
+}
+
+#personal-area:hover #personal-dropdown , #notification:hover #personal-dropdown , #personal-dropdown:hover{
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.personal-dropdown:hover {
+  color: white;
+}
+
 .header-sidebar {
   width: 100%;
   background-color: rgb(15, 19, 35);
