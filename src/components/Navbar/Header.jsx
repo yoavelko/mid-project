@@ -76,7 +76,7 @@ const Header = () => {
           <div id="logged-as"></div>
         </div>
         <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-        <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
+        <label htmlFor="openSidebarMenu" className="sidebarIconToggleRes">
           <div className="spinner diagonal part-1"></div>
           <div className="spinner horizontal"></div>
           <div className="spinner diagonal part-2"></div>
