@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='header'>
+      <div id='header'>
         <div className="navbar">
           <div id='logo-container'>
             <Link to={'/'} onClick={() => window.scrollTo(0, 0)}>
